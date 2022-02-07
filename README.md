@@ -4,11 +4,4 @@
 
 
 
-## Markdown
-
-List of things:
-- computers
-- raspberry pis
-- arduinos
-
 
