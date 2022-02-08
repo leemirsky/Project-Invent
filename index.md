@@ -39,6 +39,17 @@ For more information about the national program, see [here](https://projectinven
 
 ## Common Arduino Commands
 
+**Printing to the Serial Monitor**
+<br> This is a helpful tool when you want to see certain information in real team. For example, if you are writing a program that takes in sound levels from a microphone, you can use the Serial Monitor to see what the sound values are that are being detected. To access the Serial Monitor, click Tools --> Serial Monitor. For more information on Serial Monitor and the Serial.print commands see [here](https://www.arduino.cc/reference/en/language/functions/communication/serial/print/).
+```c
+void setup() {
+  Serial.begin(9600); //this starts the serial communication
+}
 
+void loop() {
+  Serial.println(val); //"val" can be replaced by the variable you are trying to see the value of
+  delay(1000); //wait for 1000ms (1 second). This is often helpful if you want to slow down the rate at which the Serial Monitor displays the values
+  }
+```
 
 
