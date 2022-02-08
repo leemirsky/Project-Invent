@@ -12,15 +12,3 @@ For more information about the national program, see [here](https://projectinven
 <br> [Team 4: Loqui](https://github.com/leemirsky/Team4-Loqui)
 <br> [Team 5: RLMC](https://github.com/leemirsky/Team5-RLMC)
 
-## Links
-
-[Marlborough School](http://marlborough.org)
-
-
-## Lists
-
-List of things:
-- computers
-- raspberry pis
-- arduinos
-
