@@ -2,8 +2,11 @@
 
 ## 21-22 Team Projects
 
-[Team 1: Memini](https://github.com/leemirsky/Team1-Memini)
-[Team 2: Xandra] (https://github.com/leemirsky/Team2-Xandra)
+Team 1
+Team 2
+
+<p> [Team 1: Memini](https://github.com/leemirsky/Team1-Memini) </p>
+<p> [Team 2: Xandra](https://github.com/leemirsky/Team2-Xandra) </p>
 
 ## Links
 
