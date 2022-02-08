@@ -2,11 +2,11 @@
 
 ## 21-22 Team Projects
 
-Team 1
-Team 2
-
-<p> [Team 1: Memini](https://github.com/leemirsky/Team1-Memini) </p>
-<p> [Team 2: Xandra](https://github.com/leemirsky/Team2-Xandra) </p>
+<br> [Team 1: Memini](https://github.com/leemirsky/Team1-Memini)
+<br> [Team 2: Xandra](https://github.com/leemirsky/Team2-Xandra)
+<br> [Team 3: Nova](https://github.com/leemirsky/Team3-Nova)
+<br> [Team 4: Loqui](https://github.com/leemirsky/Team4-Loqui)
+<br> [Team 5: RLMC](https://github.com/leemirsky/Team5-RLMC)
 
 ## Links
 
