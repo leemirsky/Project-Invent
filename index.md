@@ -53,4 +53,72 @@ void loop() {
   }
 ```
 
+**Microphone**
+<br>
+<br> There are many different types of microphones that you can use. In most cases you will need both a microphone and an amplifier; some modules (like the KY-038 below) contain both together. Microphones also may have a **digital output**, an **analog output**, or both.
+<br>***Digital outputs*** are binary and either detect sound or no sound.
+<br>***Analog outputs*** are not binary and can instead put out a range of values (i.e. a range of sound levels).
 
+**[KY-038 Microphone](https://www.amazon.com/DEVMO-Microphone-Sensitivity-Detection-Arduino/dp/B07S4DTKYH?keywords=KY-038+microphone&qid=1636784002&sr=8-5&linkCode=ll1&tag=circbasi-20&linkId=76338534b7852d40f7f127cc9c17d720&language=en_US&ref_=as_li_ss_tl)**: This module contains both a microphone (with both a digital and analog output) and a pre-amplifier. Below are some helpful resources to learn more about KY-038 microphones and how they work.
+<br>[Link 1](https://www.circuitbasics.com/how-to-use-microphones-on-the-arduino/)
+<br>[Link 2](https://microcontrollerslab.com/ky-038-microphone-sound-sensor-module-arduino-tutorial/)
+
+***Code using the analog output***: The code below will turn an LED on when the sound level goes higher than a specified threshold.
+```c
+const int microphonePin = A0;
+int ledPin = 10;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  int mn = 1024;
+  int mx = 0;
+  int delta = mx - mn;
+
+  for (int i = 0; i < 100; ++i) {
+    int val = analogRead(microphonePin);
+    mn = min(mn, val);
+    mx = max(mx, val);
+  }
+
+  Serial.println(delta);
+
+  if (delta > 200) {
+    digitalWrite(ledPin, HIGH);
+    delay(1000);
+  }
+
+  else {
+    digitalWrite(ledPin, LOW);
+  }
+}
+```
+***Code using the digital output***: The code below will turn an LED on when sound is detected.
+```c
+int ledPin = 10;
+int microphonePin = 1;
+int state = 0;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(ledPin, OUTPUT);
+  pinMode(microphonePin, INPUT);
+}
+
+void loop() {
+  state = digitalRead(microphonePin);
+  Serial.println(state);
+
+  if (state == HIGH) {
+    digitalWrite(ledPin, HIGH);
+    delay(1000);
+  }
+
+  else {
+    digitalWrite(ledPin, LOW);
+  }
+}
+```
